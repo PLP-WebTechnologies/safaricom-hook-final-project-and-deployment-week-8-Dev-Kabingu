@@ -308,14 +308,82 @@ section{
 .reason-section h2{
     margin-bottom: 16px;
 }
-.contact-section{
+.booking-section{
     text-align: center;
-    padding: 48px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./assets/8ea8a2af-234a-4abe-af33-d67225570f3c.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 64px 0;
 }
-.contact-section p{
+.booking-section h1{
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 48px;
+    font-size: 42px;
+}
+.booking-section button{
+    background: var(--button-color);
+    margin-bottom: 12px;
+}
+.booking-section p{
+    color: white;
+}
+/* contact page design */
+.contact-section{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    padding: 48px;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.contact-text{
+    width: 400px;
+    margin-bottom: 18px;
+}
+.contact-text p{
     line-height: 24px;
-    margin-top: 24px;
     font-size: 16px;
+}
+.contact-text h1{
+    margin-bottom: 12px;
+    color: var(--button-color);
+}
+.contact-text h4{
+    margin-top: 16px;
+}
+.contact-form{
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 18px;
+}
+.contact-form h2{
+    text-transform: capitalize;
+    font-size: 24px;
+    color: var(--text-color);
+    margin-bottom: 32px;
+}
+.contact-form input{
+    display: block;
+    width: 100%;
+    padding: 12px ;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 16px;
+    outline: none;
+    font-size: 16px;
+}
+.contact-form textarea{
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.2);
+    font-size: 16px;
+    padding: 12px;
+}
+.contact-form button{
+    background: var(--button-color);
+    margin-top: 16px;
 }
 /* footer section */
 footer{
@@ -324,4 +392,90 @@ footer{
     text-align: center;
     color: var(--text-color);
     font-weight: 600;
+}
+/* about page styling */
+.about{
+    text-align: center;
+    padding: 48px;
+}
+.about-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 24px;
+    padding: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    background: whitesmoke;
+}
+.about-text, .mission-section{
+    width: 500px;
+}
+.about-text p, .mission-section p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+}
+.tour-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 32px;
+    padding: 16px 0;
+    margin-bottom: 24px;
+}
+.tour-container-text{
+    width: 500px;
+}
+.tour-container-text p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+}
+.tour-container-image{
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+.tour-container-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.team-member-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+.team-member-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.team-section{
+    background: whitesmoke;
+    padding: 64px;
+}
+.team-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 50px 0;
+}
+.team-member{
+    width: 250px;
+    border-top: 4px;
+    height: auto;
+    padding: 18px;
+    /* text-align: center; */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.team-member p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
 }
