@@ -18,8 +18,8 @@
             </ul>
         </nav>
         <div class="header-buttons">
-            <button class="login">login</button>
-            <button class="signup">Sign Up</button>
+            <button class="login" onclick="window.location.href = 'login.html' ">login</button>
+            <button class="signup" onclick="window.location.href = 'login.html' ">Sign Up</button>
         </div>
     </header>
     <!-- hero section -->
@@ -37,10 +37,10 @@
      </div>
      <div class="contact-form">
         <h2>get in touch</h2>
-        <form action="#">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="phone" placeholder="Phone Number" required>
+        <form action="#" onsubmit="return validateForm()">
+            <input type="text" name="name" placeholder="Name" >
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="text" name="phone" id="phone" placeholder="Phone Number">
             <textarea name="message" id="message" rows="8" placeholder="Write to Us"></textarea>
             <button id="messageButton">Send Message</button>
         </form>
@@ -50,5 +50,7 @@
    <footer>
     <p>&copy2025 Safari Horizon. | All Rights Reserved.</p>
   </footer>
+
+  <script src="./scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .section-container-form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 100px;
+        }
+        .container{
+            width: 300px;
+            height: auto;
+            padding: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 24px;
+        }
+        .container h1{
+            margin-bottom: 24px;
+        }
+        label{
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        input{
+            padding: 8px;
+            display: block;
+            border: none;
+            outline: none;
+            width: 100%;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+            margin-bottom: 12px;
+        }
+        #button{
+            background-color: #FFA500;
+            font-size: 18px;
+            color: whitesmoke;
+            font-weight: bold;
+            margin-top: 16px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Safari<span>Horizon</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+            </ul>
+        </nav>
+    </header>
+ <div class="section-container-form">
+    <div class="container"id="login-form">
+        <h1>Login</h1>
+        <div class="login-form" >
+            <input type="email" name="email" id="email" required placeholder="Email">
+            <input type="password" name="password" id="password" required placeholder="Password">
+            <input type="submit" id="button" value="Login" onclick="window.location.href = 'index.html'"/>
+            <p>Don't have an account? <a href="#" id="signupButton">Sign Up</a></p>
+        </div>
+       </div>
+
+       <!-- sign up form -->
+       <div class="container" style="display: none;" id="signup-form">
+        <h1>Sign Up</h1>
+        <div class="signup-form" >
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" id="email" required placeholder="Email">
+            <input type="password" name="password" id="password" required placeholder="Password">
+            <input type="password" id="confirm_password" required placeholder="Confirm Password">
+            <input type="submit" id="button" value="Sign Up" />
+            <p>Already have an account? <a href="#" id="loginBtn"> Login</a></p>
+        </div>
+       </div>
+ </div>
+ <footer>
+    <p>&copy2025 Safari Horizon. | All Rights Reserved.</p>
+  </footer>
+  <script>
+    document.getElementById("signupButton").onclick = function(){
+        document.getElementById("login-form").style.display = 'none';
+        document.getElementById("signup-form").style.display = 'block';
+    }
+    document.getElementById("loginBtn").onclick = function(){
+        document.getElementById("login-form").style.display = 'block';
+        document.getElementById("signup-form").style.display = 'none';
+    }
+
+  </script>
+</body>
+</html>

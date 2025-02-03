@@ -72,6 +72,11 @@ button.signup{
     background: transparent;
     border: 1px solid var(--button-color);
 }
+.menu-bars i{
+    font-size: 30px;
+    color: #FFA500;
+    display: none;
+}
 /* hero section */
 section{
     display: flex;
@@ -147,7 +152,6 @@ section{
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
-    padding: 0 100px;
 }
 .destination-card{
     width: 250px;
@@ -228,6 +232,7 @@ section{
 /* latest stories section */
 .our-stories-section{
     width: 100%;
+    height: auto;
     padding: 100px;
     background: rgb(230, 229, 229);
 }
@@ -235,7 +240,6 @@ section{
     padding-left: 100px;
 }
 .stories{
-    /* padding: 100px; */
     animation: slideDown 2s ease-in-out;
 }
 @keyframes slideDown{
@@ -262,6 +266,7 @@ section{
     gap: 12px;
     width: 500px;
     margin-bottom: 18px;
+    flex-wrap: wrap;
 }
 .story-container h4{
     font-size: 16px;
@@ -423,6 +428,7 @@ footer{
     gap: 32px;
     padding: 16px 0;
     margin-bottom: 24px;
+    flex-wrap: wrap;
 }
 .tour-container-text{
     width: 500px;
@@ -465,6 +471,7 @@ footer{
     justify-content: center;
     gap: 48px;
     padding: 50px 0;
+    flex-wrap: wrap;
 }
 .team-member{
     width: 250px;
@@ -478,4 +485,126 @@ footer{
     font-size: 16px;
     line-height: 24px;
     margin-top: 16px;
+}
+/* --------responsive design------------- */
+@media(max-width:300px){
+    section{
+        padding-left: 30px;
+    }
+    .hero-text h1{
+        font-size: 24px;
+    }
+    .destination-section{
+        padding-left: 30px;
+    }
+    .cultural-section{
+        padding-left: 30px;
+    }
+    .our-stories-section{
+        padding: 30px;
+        padding-left: 100px;
+        background: none;
+    }
+    .story-container-image{
+        width: 100%;
+        height: 300px;
+        
+    }
+    .main-story{
+        width: 100%;
+    }
+    .reason-section{
+        padding: 30px;
+        
+    }
+}
+@media(max-width: 600px){
+    .our-stories-section h2{
+        padding-left: 0;
+    }
+    .main-story{
+        padding-top: 20px;
+    }
+    #image-swap{
+        order: 2;
+    }
+    #text-swap{
+        order: 1;
+    }
+   
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 18px 24px;
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        display: none; /* Initially hide the menu on mobile */
+        width: 100%;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 12px;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    /* Display the menu icon */
+    .menu-bars {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Initially hide the close icon */
+    #cross-menu-bar {
+        display: none;
+    }
+
+    #open-menu-bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Show the menu when the menu is active */
+    .menu-active {
+        display: flex;
+    }
+}
+
+/* Media Queries for very small screens */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
 }
